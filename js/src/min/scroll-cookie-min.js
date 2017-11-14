@@ -1,0 +1,1 @@
+$(document).ready(function(){var o=window.location.href.replace(window.location.origin,""),i;if($(window).on("scroll",function(){clearTimeout(i),i=setTimeout(function(){Cookies.set("scroll-cookie",$(window).scrollTop()+"|"+o,{expires:365,path:""})},250)}),void 0!==Cookies.get("scroll-cookie")){var e=Cookies.get("scroll-cookie").split("|");e[1]==o&&$(window).scrollTop(e[0])}});
